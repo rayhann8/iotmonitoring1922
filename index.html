@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IoT Monitoring Suhu & Kelembapan</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <h1>IoT Monitoring</h1>
+    <p class="subtitle">Monitoring Suhu & Kelembapan Real-Time</p>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>🌡️ Suhu</h2>
+            <p id="temperature">-- °C</p>
+        </div>
+
+        <div class="card">
+            <h2>💧 Kelembapan</h2>
+            <p id="humidity">-- %</p>
+        </div>
+
+    </div>
+
+    <div class="chart-container">
+        <h2>Grafik Monitoring</h2>
+
+        <canvas id="sensorChart"></canvas>
+    </div>
+
+    <p id="status">Mengambil data...</p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
